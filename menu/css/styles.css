@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 17%;
+    height: 100vh;
+    background-color: #171717;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-right: 50%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    width: 83%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 13.2px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2px;
+}
+
+.nav-link span {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    background-color: #484848dc;
+    border-radius: 10px;
+}
+
+.logout {
+    width: auto;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: 95%;
+}
+
+.special-link {
+    background-color: #28252E;
+    border-radius: 10px;
+    color: #BE9DF5;
+}
+
+.special-link:hover {
+    background-color: #28252E;
+}
+
+.logout:hover {
+    background-color: #171717;
+}
+
+/*CSS MAIN*/
+main {
+    margin-left: 17%;
+    width: 83%;
+    font-family: "Poppins", sans-serif;
+    background-color: #FAFAFA;
+}
+
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+.mini-header h3 {
+    margin: 0;
+    color: #000000;
+    padding-right: 75%;
+}
+
+.main-link{
+    color: #484848dc;
+    font-size: 22px;
+    padding: 10px;
+}
+.user{
+    color: #484848dc;
+    font-size: 16px;
+    text-decoration: none;
+}
+.main-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+}
+.user:hover {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+/*CONTENIDO MAIN*/
+.content-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.left-content {
+    width: 67%;
+}
+.right-content {
+    width: 32%;
+}
+.search-box input {
+    width: 90%;
+    margin-left: 4%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.post-card {
+    width: 88%;
+    margin-left: 4%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.post-card h4 {
+    margin: 0 0 10px 0;
+}
+.post-card p {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+.post-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*CSS DEL HORARIO*/
+.schedule {
+    width: 85%;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header-schedule{
+    margin-left: 30px;
+}
+
+.schedule div a {
+    text-decoration: none;
+    color: #484848dc;
+    margin-right: 20px;
+    font-size: 13px;
+}
+.schedule div a.special {
+    color: #722AE9;
+}
+.schedule p span{
+    color: #722AE9;
+}
+.schedule h4 {
+    margin: 10px 0;
+    color: #333;
+}
+.schedule ul {
+    list-style: none;
+    padding: 0;
+}
+.schedule ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.schedule ul li span {
+    margin-left: 10px;
+    border-left: 3px solid #ccc;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.schedule ul li.has-class span {
+    border-color: #00b300;
+}
+.icon {
+    color: #722AE9;
+    margin-left: 10px;
+}
+
+/*RESPONSIVE CSS*/
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 0 10px;
+    }
+
+    .logo {
+        margin: 10px auto;
+    }
+
+    .nav-menu {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu.active {
+        display: flex; 
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex; 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+   
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+    .content-main {
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 0 10px; 
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+        margin-left: 0%;
+        box-sizing: border-box; 
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .post-card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .schedule {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-schedule {
+        margin-left: 0;
+    }
+
+    .schedule div a {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .schedule ul li {
+        font-size: 12px;
+    }
+
+    .mini-header {
+        padding: 10px 15px; 
+    }
+
+    .mini-header h3 {
+        padding-right: 0;
+        font-size: 18px; 
+    }
+
+    .main-link {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .user {
+        font-size: 14px;
+    }
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.schedule-list li .day-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-list li .course-item {
+    padding: 5px 10px;
+    background-color: #e7f3ff;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-name {
+    font-weight: 500;
+}
+
+.course-time {
+    font-size: 0.9em;
+    color: #555;
+}

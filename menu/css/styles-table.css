@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 17%;
+    height: 100vh;
+    background-color: #171717;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-right: 50%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    width: 83%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 13.2px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2px;
+}
+
+.nav-link span {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    background-color: #484848dc;
+    border-radius: 10px;
+}
+
+.logout {
+    width: auto;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: 95%;
+}
+
+.special-link {
+    background-color: #28252E;
+    border-radius: 10px;
+    color: #BE9DF5;
+}
+
+.special-link:hover {
+    background-color: #28252E;
+}
+
+.logout:hover {
+    background-color: #171717;
+}
+
+/*CSS MAIN*/
+main {
+    margin-left: 17%;
+    width: 83%;
+    font-family: "Poppins", sans-serif;
+    background-color: #FAFAFA;
+}
+
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+.mini-header h3 {
+    margin: 0;
+    color: #000000;
+    padding-right: 63.3%;
+}
+
+.main-link {
+    color: #484848dc;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.user {
+    color: #484848dc;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.main-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+}
+
+.user:hover {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+/*CONTENIDO MAIN*/
+.content-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters span {
+    font-size: 13px;
+}
+
+.filters select,
+.filters input {
+    padding: 10px;
+    font-size: 14px;
+    color: #484848dc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select-01 {
+    width: 13%;
+    margin-left: 15px;
+}
+
+.select-02 {
+    width: 24.4%;
+}
+
+.filters button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #722AE9;
+    color: white;
+    cursor: pointer;
+}
+
+/*CSS PRIMERA TABLA*/
+table {
+    margin-left: 15px;
+    width: 97%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+table th,
+table td {
+    padding: 1px 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/*CSS SEGUNDA TABLA Y ACCIONES*/
+.summary-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.summary-table {
+    border: none;
+    width: auto;
+    background-color: #f9f9f9;
+}
+
+.summary-table td {
+    padding: 5px 10px;
+    border: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-actions {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #722AE9;
+    color: white;
+    cursor: pointer;
+}
+
+.calender {
+    color: #000000;
+    background-color: #d1d1d1;
+}

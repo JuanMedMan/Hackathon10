@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <button class="menu-toggle">
+            <i class="fa-solid fa-bars"></i> <!-- Using FontAwesome bars icon for menu toggle -->
+        </button>
+        <div class="logo">
+            <img src="img/logo-eva.png" alt="Logo" width="80">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link special-link"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+            <a href="#mis-cursos" class="nav-link"><i class="fa-solid fa-book-open"></i> <span>Mis cursos</span></a>
+            <a href="#biblioteca" class="nav-link"><i class="fa-solid fa-book"></i> <span>Biblioteca</span></a>
+            <a href="table.html" class="nav-link"><i class="fa-solid fa-landmark"></i> <span>Institucional</span></a>
+            <a href="#tramites" class="nav-link"><i class="fa-regular fa-file-lines"></i> <span>Trámites</span></a>
+            <a href="#beneficios" class="nav-link"><i class="fa-regular fa-square-plus"></i> <span>Beneficios</span></a>
+            <a href="regulation.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> <span>Guía del estudiante</span></a>
+            <a href="training.html" class="nav-link"><i class="fa-solid fa-clipboard-list"></i><span>Capacitaciones</span></a>
+            <a href="../index.html" class="nav-link logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </nav>
+    </header>
+    <main>
+        <div class="mini-header">
+            <h3>Inicio</h3>
+            <a href="#" class="main-link"><i class="fa-regular fa-circle-question"></i></a>
+            <a href="#" class="main-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="main-link user"><i class="fa-solid fa-user-tie"></i> Juan Medina</a>
+        </div>
+        <div class="content-main">
+            <div class="left-content">
+                <div class="search-box">
+                    <input type="text" placeholder="¡Hola Juan Medina! ¿Qué publicación o perfil estás buscando?">
+                </div>
+                <div class="post-card">
+                    <h4>Facultad de Negocios</h4>
+                    <p>Facultad de Negocios 📢Nueva Master Class📢 Te gustaría saber de: El éxito del Marketing Mix para
+                        potenciar tu marca. 📍</p>
+                    <img class="public" src="img/public-1.png" alt="Imagen de la publicación">
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="schedule">
+                    <div class="header-schedule">
+                        <a href="#">Mis Cursos</a>
+                        <a href="#" class="special">Horario</a>
+                    </div>
+                    <p>-------------<span>--------</span>------------------</p>
+                    <h4>Esta semana: <i class="fa-solid fa-chevron-left icon"></i> <i class="fa-solid fa-chevron-right icon"></i></h4>
+                    <ul id="schedule-list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/dataset.js"></script>
+</body>
+
+</html>
